@@ -166,6 +166,17 @@ enum stack_protector_guard {
 #define TARGET_ZICBOM ((riscv_zicmo_subext & MASK_ZICBOM) != 0)
 #define TARGET_ZICBOP ((riscv_zicmo_subext & MASK_ZICBOP) != 0)
 
+#define MASK_ZICCIF     (1 << 0)
+#define MASK_ZICCRSE    (1 << 1)
+#define MASK_ZICCAMOA   (1 << 2)
+#define MASK_ZICCLSM    (1 << 3)
+
+#define TARGET_ZICCIF   ((riscv_zicc_subext & MASK_ZICCIF) != 0)
+#define TARGET_ZICCRSE  ((riscv_zicc_subext & MASK_ZICCRSE) != 0)
+#define TARGET_ZICCAMOA ((riscv_zicc_subext & MASK_ZICCAMOA) != 0)
+#define TARGET_ZICCLSM  ((riscv_zicc_subext & MASK_ZICCLSM) != 0)
+
+
 #define MASK_ZFHMIN   (1 << 0)
 #define MASK_ZFH      (1 << 1)
 

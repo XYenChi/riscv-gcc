@@ -1232,6 +1232,12 @@ static const riscv_ext_flag_table_t riscv_ext_flag_table[] =
   {"zicbom", &gcc_options::x_riscv_zicmo_subext, MASK_ZICBOM},
   {"zicbop", &gcc_options::x_riscv_zicmo_subext, MASK_ZICBOP},
 
+  {"ziccif",   &gcc_options::x_riscv_zicc_subext, MASK_ZICCIF},
+  {"ziccrse",  &gcc_options::x_riscv_zicc_subext, MASK_ZICCRSE},
+  {"ziccamoa", &gcc_options::x_riscv_zicc_subext, MASK_ZICCAMOA},
+  {"zicclsm",  &gcc_options::x_riscv_zicc_subext, MASK_ZICCLSM},
+
+
   {"zve32x",   &gcc_options::x_target_flags, MASK_VECTOR},
   {"zve32f",   &gcc_options::x_target_flags, MASK_VECTOR},
   {"zve64x",   &gcc_options::x_target_flags, MASK_VECTOR},

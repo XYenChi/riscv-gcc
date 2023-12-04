@@ -227,6 +227,9 @@ TargetVariable
 int riscv_zicmo_subext
 
 TargetVariable
+int riscv_zicc_subext
+
+TargetVariable
 int riscv_zf_subext
 
 TargetVariable
